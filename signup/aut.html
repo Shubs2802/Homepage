@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Login Page</title>
+</head>
+<body>
+<form name="loginForm" method="post" action="file:///F:/37-40/DASHBOARD/index.html">
+<table width="60%" height="60%" bgcolor="0099CC" align="center">
+
+<tr>
+<td colspan=2><center><font size=8><b>Login Page</b></font></center></td>
+</tr>
+
+<tr>
+<td><h2>Username:</h2></td>
+<td><input type="text" size=60 name="userid"></td>
+</tr>
+
+<tr>
+<td><h2>Password:</h2></td>
+<td><input type="Password" size=60 name="pwd"></td>
+</tr>
+
+<tr>
+<td ><input type="Reset"></td>
+<td><input type="submit" onclick="return check(this.form)" value="Login"></td>
+</tr>
+
+</table>
+</form>
+<script language="javascript">
+function check(form)
+{
+
+if(form.userid.value == "kkwieer" && form.pwd.value == "kkwieer")
+{
+	return true;
+}
+else
+{
+	alert("Error Password or Username")
+	return false;
+}
+}
+</script>
+
+</body>
+</html>
